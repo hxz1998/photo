@@ -22,6 +22,6 @@ public class SimplePropertiesFactoryTest {
 
     @Test
     public void getPropertiesValue() {
-        Assert.assertEquals(factory.getPropertiesValue("BUCKET"), "test");
+        Assert.assertEquals(factory.getPropertiesValue("BUCKET"), "photo");
     }
 }
