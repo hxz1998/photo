@@ -1,7 +1,7 @@
 package util;
 
-import model.Token;
+import model.KeyStore;
 
 public interface TokenFactory {
-    Token getToken();
+    KeyStore getKeyStore();
 }

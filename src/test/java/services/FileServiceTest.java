@@ -22,8 +22,9 @@ public class FileServiceTest {
         fileService.uploadImage(new File("src/main/resources/img5.jpg"));
     }
 
+    @Test
     public void getFileInfo() {
-        fileService.getFileInfo("FipTGppRRzv4aMhHTOiqqDETXpc6");
+        fileService.getFileInfo("FiTw_8nMdWNULmtdDdudb7-nlnv4");
     }
 
     public void deleteFile() {

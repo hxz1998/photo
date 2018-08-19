@@ -1,5 +1,6 @@
 package util.impl;
 
+import org.springframework.core.io.ClassPathResource;
 import util.PropertiesFactory;
 
 import java.io.FileReader;
@@ -13,7 +14,7 @@ public class SimplePropertiesFactory implements PropertiesFactory {
     public SimplePropertiesFactory() {
         properties = new Properties();
         try {
-            properties.load(new FileReader("src/main/resources/keys.properties"));
+            properties.load(new ClassPathResource("keys.properties").getInputStream());
         } catch (IOException e) {
             e.printStackTrace();
         }
